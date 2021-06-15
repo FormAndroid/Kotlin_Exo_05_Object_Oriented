@@ -19,7 +19,7 @@ class Teacher(val firstname: String, val lastname: String, val birthdate: LocalD
 
     val age: Int
         get() {
-            val period: Period = Period.between(birthdate, LocalDate.now());
+            val period: Period = Period.between(birthdate, LocalDate.now())
             return period.years
         }
 
